@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Structures in JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 10px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #333;
+        }
+        pre {
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+        .output {
+            background-color: #d4edda;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            color: #155724;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Looping Structures</h1>
+    <p>This page demonstrates the use of <code>for</code>, <code>while</code>, and <code>do-while</code> loops in JavaScript.</p>
+    
+    <h2>1. For Loop</h2>
+    <pre>
+for (let i = 0; i < 5; i++) {
+    console.log("For Loop Iteration: " + i);
+}
+    </pre>
+    <button onclick="runForLoop()">Run For Loop</button>
+    <div id="for-output" class="output"></div>
+    
+    <h2>2. While Loop</h2>
+    <pre>
+let j = 0;
+while (j < 5) {
+    console.log("While Loop Iteration: " + j);
+    j++;
+}
+    </pre>
+    <button onclick="runWhileLoop()">Run While Loop</button>
+    <div id="while-output" class="output"></div>
+    
+    <h2>3. Do-While Loop</h2>
+    <pre>
+let k = 0;
+do {
+    console.log("Do-While Loop Iteration: " + k);
+    k++;
+} while (k < 5);
+    </pre>
+    <button onclick="runDoWhileLoop()">Run Do-While Loop</button>
+    <div id="do-while-output" class="output"></div>
+
+    <script>
+        function runForLoop() {
+            const outputDiv = document.getElementById('for-output');
+            outputDiv.innerHTML = ''; // Clear previous output
+            for (let i = 0; i < 5; i++) {
+                outputDiv.innerHTML += For Loop Iteration: ${i}<br>;
+            }
+        }
+
+        function runWhileLoop() {
+            const outputDiv = document.getElementById('while-output');
+            outputDiv.innerHTML = ''; // Clear previous output
+            let j = 0;
+            while (j < 5) {
+                outputDiv.innerHTML += While Loop Iteration: ${j}<br>;
+                j++;
+            }
+        }
+
+        function runDoWhileLoop() {
+            const outputDiv = document.getElementById('do-while-output');
+            outputDiv.innerHTML = ''; // Clear previous output
+            let k = 0;
+            do {
+                outputDiv.innerHTML += Do-While Loop Iteration: ${k}<br>;
+                k++;
+            } while (k < 5);
+        }
+    </script>
+</body>
+</html>

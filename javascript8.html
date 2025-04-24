@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // var car = []; //declare method1
+    // car = ["car1","car2","car3","car4"]; //initialize
+    // document.write(car[0]);
+    // document.write(car[1]);
+    // document.write(car[2]);
+    // document.write(car[3]);
+    // car[3] ="car33"; //change value
+
+    // var car = new Array(); declare method2
+    // car = ["car1","car2","car3","car4"];
+    // document.write(car[0]);
+    // document.write(car[1]);
+    // document.write(car[2]);
+    // document.write(car[3]);
+
+    var cars1 = ["car1","car2","car3","car4"];
+    var cars2 = ["car5","car6","car7","car8"];
+    document.write(cars1[0]);
+    document.write(cars1[1]);
+    document.write(cars1[2]);
+    document.write("<br>");
+    cars1.push("car5")
+    for(let i=0;i<cars1.length;i++){
+        document.write(cars1[i]);
+    }
+    document.write("<br>");
+    cars1.pop();
+    for(let i=0;i<cars1.length;i++){
+        document.write(cars1[i]);
+    }
+    document.write("<br>");
+    cars1.shift();
+    for(let i=0;i<cars1.length;i++){
+        document.write(cars1[i]);
+    }
+    document.write("<br>");
+    cars1.unshift("car3");
+    for(let i=0;i<cars1.length;i++){
+        document.write(cars1[i]);
+    }
+    document.write("<br>");
+    document.write(cars1.indexOf("car3"));
+    document.write("<br>");
+    let combine=cars1.concat(cars2);
+    for(let i=0;i<combine.length;i++){
+        document.write(combine[i]);
+    }
+
+
+
+    
+</script>
+</html>

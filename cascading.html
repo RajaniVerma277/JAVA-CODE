@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PRACTICE</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .main{
+            height:100vh;
+            width:100vw;
+            background-color:olive;
+        }
+        .parent{
+            height:50vh;
+            width:100vw;
+            
+        }
+        .child{
+            height:100%;
+            width:50vw;
+            float:left;
+            background-color:pink;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- type of css:- 
+    there are three type of CSS
+    1. inline CSS:- css which is applied on the page inside the tag
+    2.internal CSS:- css which is applied on the page inside the style tag
+    3.external CSS:- css which is written outside the page.
+    what is selector ?
+    selector are pattern used to select the element you wnat to style 
+    type of selector-
+    .class (.intro)- select all element with class="intro". class define by (.)
+    #id (#firstname)- select the element with id="firstname". id define by (#)
+    class:-one classname can be use by multiple time. 
+    eg <div class="myclass"></div>
+        <h3 class="myclass"></h3> 
+    id:- one idname can be use on time only 
+    eg <div id="myclass"></div> 
+        <h3 id="class"></h3>   -->
+
+
+        <!-- working with internal css.
+        css properties
+        width-
+        height-
+        background-color-
+        float-
+         -->
+        <div class="main"> <!--main div-->
+            <div class="parent"> <!--parent div 1-->
+                <div class="child" style="background-color:olive"> <!--col div 1-->
+                    HOME
+                </div>
+                <div class="child" style="background-color:brown"> <!--col div 2-->
+                    ABOUT
+                </div>
+            </div>
+            <div class="parent" style="background-color:blue"> <!--parent div 2-->
+                <div class="child"> <!--col div 3-->
+                    HOME
+                </div>
+                <div class="child" style="background-color:grey"> <!--col div 4-->
+                    ABOUT
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>

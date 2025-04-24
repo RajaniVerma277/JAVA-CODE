@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+<body>
+    
+</body>
+<script>
+    for(var count1=1; count1<=10; count1++){
+        document.write(count1+"<br>");
+    }
+
+    for(var count=10; count>=1; count--){
+        document.write(count+"<br>");
+    }
+
+    var count = 0;
+    while(count<=10){
+        document.write(count+"<br>");
+        count++;
+    }
+
+    var cars = ["car1","car2","car3","car4"];
+    cars.forEach(car);
+    function car(item){
+        document.write(item);
+    }
+    var cars = ["car1","car2","car3","car4"];
+    cars.forEach(car);
+    function car(item,index){
+        document.write(index+"=>"+item);
+    }
+</script>
+</html>
